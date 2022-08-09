@@ -19,4 +19,5 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Send greeting
-      run: echo "Hello Ashgr"
+      run: curl --write-out %{http_code} --silent -X POST -u ci:1125523cda18b7432491446cd0e3d12541 --output /dev/null https://acjenkins.atypon.com/view/Daily_Patching/job/TestJobDailypatch2/buildWithParameters?branch=test1
+
