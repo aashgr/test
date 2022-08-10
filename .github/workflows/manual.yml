@@ -15,6 +15,9 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    # Runs a single command using the runners shell
-    - name: Create Ticket
-      run: chmod u+x ./jir.sh; sh ./jir.sh;
+    - uses: actions/checkout@v2
+    - name: Run script file
+      run: |
+         chmod +x ./jir.sh
+         ./jir.sh
+      shell: bash
