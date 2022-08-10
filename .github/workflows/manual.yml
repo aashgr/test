@@ -17,4 +17,4 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Create Ticket
-      run: sh ./jir.sh
+      run: chmod u+x ./jir.sh; sh ./jir.sh;
