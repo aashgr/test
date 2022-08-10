@@ -17,9 +17,7 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Create Ticket
-      run: |
-        chmod +x "${GITHUB_WORKSPACE}/.github/jir.sh"
-        "${GITHUB_WORKSPACE}/.github/jir.sh"
+      run: ll
 
         
     
