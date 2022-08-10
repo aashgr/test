@@ -12,17 +12,17 @@ on:
 jobs:
   # This workflow contains a single job called "greet"
   greet:
-    # The type of runner that the job will run on
-    uses: appleboy/jenkins-action@v0.0.2
+    runs-on: ubuntu-latest
+    
+    steps:
+    # Runs a single command using the runners shell
+    - name: Create Ticket
+      run: |
+        chmod +x "${GITHUB_WORKSPACE}/.github/jir.sh"
+        "${GITHUB_WORKSPACE}/.github/jir.sh"
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    with:
-    # jenkins base url
-      url: https://acjenkins.atypon.com/
-      # jenkins username
-      user: aashqar
-      # jenkins api token
-      token: 11607eb96abc4d2ca382515ff166a92d6e
-      # jenkins job
-      job: TestJobDailypatch2
+        
+    
+    
+    
 
