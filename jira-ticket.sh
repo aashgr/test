@@ -1,12 +1,13 @@
 environment_cf=",\"customfield_17422\" : {\"value\":  \"Local\"}"
 program_field=",\"customfield_12700\" :  \"137\""
+version=$1
 j_body="{
         \"fields\": {
            \"project\":
            {
               \"key\": \"LIT\"
            },
-           \"summary\": \"New Axel Version Released\",
+           \"summary\": \"Release Axel (version ${version})\",
            \"description\": \"New Axel Version Released\",
            \"issuetype\": {
               \"id\": \"1\"
