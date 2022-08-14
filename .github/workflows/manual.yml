@@ -20,5 +20,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Run script file
       run: |
+         chmod +x ./jira-ticket.sh
+         ./jira-ticket.sh ${{ github.ref_name }}
          echo  ${{ github.ref_name }}
       shell: bash
