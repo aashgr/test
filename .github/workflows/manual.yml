@@ -1,7 +1,8 @@
 # This is a basic workflow that is manually trigAsdhggered
 
 name: Manual workflow
-
+#chmod +x ./jira-ticket.sh
+#./jira-ticket.sh
 # Controls when the action will run. Workflow runs when manually triggered using the UI ghjghj
 # or API.
 on:  
@@ -20,6 +21,4 @@ jobs:
     - name: Run script file
       run: |
          echo  ${{ github.ref_name }}
-         chmod +x ./jira-ticket.sh
-         ./jira-ticket.sh
       shell: bash
