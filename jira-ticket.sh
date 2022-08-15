@@ -1,4 +1,3 @@
-environment_cf=",\"customfield_17422\" : {\"value\":  \"Local\"}"
 program_field=",\"customfield_12700\" :  \"137\""
 version=$1
 j_body="{
@@ -10,13 +9,12 @@ j_body="{
            \"summary\": \"Release Axel (version ${version})\",
            \"description\": \"New Axel Version Released\",
            \"issuetype\": {
-              \"id\": \"1\"
+              \"name\": \"Task.\"
            },
             \"versions\" : [{ \"name\": \"lit-current-production\"}],
             \"components\" : [{ \"name\": \"LIT-BTD\"}],
             \"assignee\" : {\"name\":\"aashqar\"},
             \"priority\": {\"id\": \"10100\"}
-            ${environment_cf}
             ${program_field}
         }
     }"
