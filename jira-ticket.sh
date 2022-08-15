@@ -7,7 +7,7 @@ j_body="{
               \"key\": \"LIT\"
            },
            \"summary\": \"Release Axel (version ${version})\",
-           \"description\": \"New Axel Version Released\",
+           \"description\": \"A new release of Axel is required for several bugs, customizations, and improvements\",
            \"issuetype\": {
               \"name\": \"Task.\"
            },
