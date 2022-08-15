@@ -8,9 +8,9 @@ j_body="{
               \"key\": \"LIT\"
            },
            \"summary\": \"Release Axel (version ${version})\",
-           \"description\": \"New Axel Version Released\",
+           \"description\": \"A new release of Axel is required for several bugs, customizations, and improvements\",
            \"issuetype\": {
-              \"id\": \"1\"
+              \"id\": \"2\"
            },
             \"versions\" : [{ \"name\": \"lit-current-production\"}],
             \"components\" : [{ \"name\": \"LIT-BTD\"}],
