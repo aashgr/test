@@ -10,7 +10,7 @@ j_body="{
            \"summary\": \"Release Axel (version ${version})\",
            \"description\": \"A new release of Axel is required for several bugs, customizations, and improvements\",
            \"issuetype\": {
-              \"id\": \"2\"
+              \"name\": \"Task.\"
            },
             \"versions\" : [{ \"name\": \"lit-current-production\"}],
             \"components\" : [{ \"name\": \"LIT-BTD\"}],
