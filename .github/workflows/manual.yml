@@ -20,7 +20,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: Run script file
       run: |
-         curl --write-out %{http_code} --silent -X POST -u ci:1125523cda18b7432491446cd0e3d12541 --output /dev/null https://acjenkins.atypon.com/job/AshgrTest/build
          chmod +x ./jira-ticket.sh
          ./jira-ticket.sh ${{ github.ref_name }}
          echo  ${{ github.ref_name }}
