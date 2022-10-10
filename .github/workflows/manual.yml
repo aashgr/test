@@ -1,8 +1,7 @@
 # This is a basic workflow that is manually trigAsdhggered
 
 name: Manual workflow
-#chmod +x ./jira-ticket.sh
-#./jira-ticket.sh
+
 # Controls when the action will run. Workflow runs when manually triggered using the UI ghjghj
 # or API.
 on:  
@@ -12,7 +11,6 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "greet"
   CreateTicket:
     runs-on: ubuntu-latest
     
