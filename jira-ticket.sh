@@ -18,5 +18,5 @@ j_body="{
             ${program_field}
         }
     }"
-ticketID_req=`curl --silent -u opsbot:bugz111a -X POST -H "Content-Type: application/json" https://jira.atypon.com/rest/api/2/issue/ -d "${j_body}" `
+ticketID_req=`curl --silent -u opsbot:bugz111a -X POST -H "Content-Type: application/json" https://jira.atypon.com/rest/api/2/issue/ -d "${j_body}" | jq -r '.key'``
 echo "${ticketID_req}"
