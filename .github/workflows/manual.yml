@@ -22,6 +22,6 @@ jobs:
       run: |
          ls
          chmod +x ./release-script/jira-ticket.sh
-         ./jira-ticket.sh ${{ github.ref_name }}
+         ./release-script/jira-ticket.sh ${{ github.ref_name }}
          echo  ${{ github.ref_name }}
       shell: bash
