@@ -19,7 +19,5 @@ jobs:
     - name: Run script file
       run: |
          ls
-         chmod +x ./release-script/jira-ticket.sh
-         ./release-script/jira-ticket.sh ${{ github.ref_name }}
-         echo  ${{ github.ref_name }}
+
       shell: bash
