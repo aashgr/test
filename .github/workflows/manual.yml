@@ -1,0 +1,23 @@
+# This is a basic workflow that is manually trigAsdhggered
+
+name: Manual workflow
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI ghjghj
+# or API.
+on:  
+  push:
+    tags:
+      - '*' 
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  CreateTicket:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run script file
+      run: |
+         ls
+
+      shell: bash
